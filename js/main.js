@@ -5,10 +5,10 @@ function main() {
    'use strict';
 
    /* ==============================================
-  	Testimonial Slider
-  	=============================================== */
+    Testimonial Slider
+    =============================================== */
 
-  	$('a.page-scroll').click(function() {
+    $('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -39,7 +39,7 @@ function main() {
     // })
 
 
-  	/*====================================
+    /*====================================
     Portfolio Isotope Filter
     ======================================*/
     $(window).load(function() {
@@ -69,17 +69,19 @@ function main() {
 
     });
 
-  	/*====================================
+    /*====================================
     Pretty Photo
     ======================================*/
-	$("a[rel^='prettyPhoto']").prettyPhoto({
-		social_tools: false
-	});
+  $("a[rel^='prettyPhoto']").prettyPhoto({
+    social_tools: false
+  });
 
   $("#contactButton").click(function(){
     $( "#contactButton" ).remove();
     $("#emailField").html('<p><i class="fa fa-envelope-o"></i>cccads@gmail.com</p>');
     $("#phoneField").html('<p><i class="fa fa-phone"></i>087-3938456</p>');
+    $("#addressField").html('<p><i class="fa fa-map-marker"></i>15 Mourne Avenue, Dillons Cross, Cork, Ireland</p>');
+
   });
 
 }());
